@@ -1,0 +1,145 @@
+body {
+    font-family: "Lato", Helvetica, sans-serif;
+    background: #e5e5e5;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro,
+.quiz-page{
+    border: 2px solid black;
+    width: 800px;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    background-color: #F6F6F6;
+
+}
+/* .background{
+    background-color: #F6F6F6;
+    opacity: 1;
+    background-image:  linear-gradient(#F8DED7 1.6px, transparent 1.6px), linear-gradient(to right, #F8DED7 1.6px, #F6F6F6 1.6px);
+    background-size: 16px 16px;
+    z-index: -100;
+} */
+
+.start-btn{
+    color: black;
+    font-size: 1.2rem;
+    margin-top: 2em;
+}
+
+.start-btn,
+.check-btn{
+    background-color: #F0CD13;
+    display: inline-block;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    
+}
+
+.check-btn{
+    margin: 1.5em 0;
+    font-size: 1rem;
+}
+
+button{
+    cursor: pointer;
+    font-family: 'Poppins',Helvetica, sans-serif;
+    font-style: italic;
+}
+button:hover,
+button:active{
+    background-color: black;
+    color:#F0CD13;
+
+}
+    
+h1 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    font-family: 'Poppins',Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    color:#EC3C37;
+}
+
+.question-container{
+    border-bottom: 1px solid gray;
+    margin-bottom: 1em;
+    width: 80%;
+}
+.answers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+
+
+
+input{
+    display: none;
+}
+
+.answer-option{
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 8px; 
+    
+}
+
+.answer-label{
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.selected{
+    background-color: black;
+    color: white;
+}
+
+/* answerClass */
+
+.correct{
+    background-color:  #34C759;
+    border: none;
+}
+
+.incorrect{
+    background-color:  #F8DED7;
+    color: #EC3C37;
+    border: none;
+}
+
+.unselected-incorrect{
+    color: #9B9B9B;
+    border: 1px solid #9B9B9B;
+}
+
+.unselected-correct{
+    border: 1px solid #34C759;
+    color: #34C759;
+}
+
+.result-message{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Poppins',Helvetica, sans-serif;
+    color: #EC3C37;
+    margin: 0;
+}

@@ -1,19 +1,19 @@
 {
-  "name": "Scrim-s00cddkhi0",
-  "description": "https://v2.scrimba.com/the-frontend-developer-career-path-c0j/~0vh",
+  "name": "quizzical",
+  "description": "https://v2.scrimba.com/s05gqbajnu",
   "scripts": {
-    "watch": "webpack -w",
-    "build": "webpack"
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "webpack": "^2.0"
+    "he": "^1.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "vite": "latest"
   },
   "devDependencies": {
-    "babel-core": "^6.0",
-    "babel-loader": "^7.0",
-    "babel-preset-env": "*",
-    "babel-preset-react": "*"
+    "@vitejs/plugin-react": "*"
   }
 }
