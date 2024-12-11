@@ -21,13 +21,7 @@ body {
     background-color: #F6F6F6;
 
 }
-/* .background{
-    background-color: #F6F6F6;
-    opacity: 1;
-    background-image:  linear-gradient(#F8DED7 1.6px, transparent 1.6px), linear-gradient(to right, #F8DED7 1.6px, #F6F6F6 1.6px);
-    background-size: 16px 16px;
-    z-index: -100;
-} */
+
 
 .start-btn{
     color: black;
