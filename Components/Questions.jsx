@@ -38,7 +38,7 @@ export default function Questions(props) {
         // check if the user selects the correct answer, add a answerClass to conditional render w/ css
         return (
             <div className="question-container" key={index}>
-                <h3>{he.decode(questionParent.question)}</h3> 
+                <h3 className='question'>{he.decode(questionParent.question)}</h3> 
                 <div className="answers">
                     {questionParent.allAnswers.map((answer, i) => {
                         let answerClass = ""
@@ -64,6 +64,7 @@ export default function Questions(props) {
                                 value={answer}
                                 checked={isSelectedAnswer}
                                 onChange={() => handleAnswerSelect(index, answer)}
+                                disabled={isFinished}
                             />
                             <label
                                 htmlFor={`question_${index}_answer_${i}`}
@@ -88,7 +89,8 @@ export default function Questions(props) {
         <div className="quiz-page">
             {questionsDisplay}
             {isFinished && <p className="result-message">You scored {correctCount}/{data.length} correct answer{correctCount > 1 ? "s":"" }!</p>}
-            <button className="check-btn" onClick={checkAnswers}>Check Answers</button>
+            <button className="btn check-btn" onClick={checkAnswers}>Check Answers</button>
+            <button className="btn restart-btn" onClick={() => window.location.reload()}>New Quiz</button>
         </div>
     )
 }
